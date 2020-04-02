@@ -22,6 +22,7 @@ class NewsFront extends Component{
     render(){
         return(
             <div className="news-container">
+                <h2>React JS - AXIOS - React-Bootstrap News API</h2>
                 <CardDeck>
                 {
                     this.state.articles.map((article,i)=>
