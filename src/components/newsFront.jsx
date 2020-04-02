@@ -12,7 +12,7 @@ class NewsFront extends Component{
     }
     async getArticles(){
         const KEY="1eef6d1799164641972598884245ee39";
-        const ENDPOINT="http://newsapi.org/v2/top-headlines?sources=google-news&apiKey=".concat(KEY);
+        const ENDPOINT="https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=".concat(KEY);
         const response=await Axios.get(ENDPOINT);
         this.setState({
           articles:response.data.articles
